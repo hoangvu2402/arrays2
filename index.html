@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array-radom</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./action.js">
+</head>
+<body>
+
+<div class="main">
+    <div class="heading">
+        <h1 class="heading-title">phat sinh mang va tinh toan</h1>
+    </div>
+
+    <div class="body">
+        <div class="input-wrap">
+            <p class="input-title">nhap so phan tu:</p>
+            <form action="" onsubmit="return false" class="input-form col-6">
+                <input type="number" id="nhap" class = "input-here">
+            </form>
+        </div>
+
+        <div class="input-wrap">
+            <p class="input-title">nhap can tren khoang chon:</p>
+            <form action="" onsubmit="return false" class="input-form col-6">
+                <input type="number" id="can-tren" class = "input-here input-max">
+            </form>
+        </div>
+
+        <div class="input-result col-6">
+            <button type="button" id="result" onclick="calc()" class="result">phat sinh va tinh toan</button>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="footer-final">
+            <p class="footer-note" id="footer"></p>
+        </div>
+
+        <div class="wrap">
+            <div class="input-wrap footer-wrap">
+                <p class="input-title">Mang: </p>
+                <div class="col-6 result-place">
+                    <div class="display-result"><p id="mang"></p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="input-wrap footer-wrap">
+                <p class="input-title">Max trong mang: </p>
+                <div class="col-6 result-place">
+                    <div class="display-result"><p id="max"></p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="input-wrap footer-wrap">
+                <p class="input-title">Min trong mang: </p>
+                <div class="col-6 result-place">
+                    <div class="display-result"><p id="min"></p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="input-wrap footer-wrap">
+                <p class="input-title">Tong mang: </p>
+                <div class="col-6 result-place">
+                    <div class="display-result"><p id="sum"></p></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<script src="./action.js"></script>
+</body>
